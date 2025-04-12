@@ -11,8 +11,8 @@ html, body{
   background-color: gray;
 }
 #main-box{
-  height: 400px;
-  width: 350px;
+  height: 506px;
+  width: 450px;
   border: 1px solid black;
   margin-top: 50px;
   border-radius: 10px;
@@ -23,4 +23,14 @@ html, body{
   font-size: 50px;
   background-color: rgb(87, 85, 85);
   color: white;
+}
+#buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+#btn{
+  padding: 30px 40px;
 }

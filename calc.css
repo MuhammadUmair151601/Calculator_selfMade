@@ -11,18 +11,21 @@ html, body{
   background-color: gray;
 }
 #main-box{
-  height: 506px;
+  height: 508px;
   width: 450px;
   border: 1px solid black;
   margin-top: 50px;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: rgb(19, 18, 18);
+  border: 2px solid black;
 }
-#text{
+#display{
   height: 100px;
   width: 100%;
   font-size: 50px;
-  background-color: rgb(87, 85, 85);
+  background-color: rgb(19, 18, 18);
   color: white;
+  border: none;
 }
 #buttons{
   display: grid;
@@ -33,4 +36,24 @@ html, body{
 }
 #btn{
   padding: 30px 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(107, 106, 106);
+  color: white;
+  font-size: 17px;
 }
+#buttons button:nth-child(1) {
+  background-color: rgb(185, 19, 41);
+}
+#buttons button:nth-child(2),
+#buttons button:nth-child(3),
+#buttons button:nth-child(4),
+#buttons button:nth-child(8),
+#buttons button:nth-child(12),
+#buttons button:nth-child(16) {
+  background-color: rgb(242, 116, 53);
+}
+#buttons button:nth-child(19){
+  background-color: rgb(19, 126, 3);
+}
+

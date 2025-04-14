@@ -8,30 +8,74 @@
 </head>
 <body>
  <div id="main-box">
-   <div id="display">
-    <input type="text" id="text">
-   </div>
+    <input type="text" id="display" readonly>
    <div id="buttons">
-    <button id="btn">AC</button>
-    <button id="btn">+/-</button>
+    <button id="btn" >AC</button>
+    
+
+    <button id="btn" >+/-</button>
+    
+
     <button id="btn">%</button>
+    
+
     <button id="btn">/</button>
+    
+
     <button id="btn">7</button>
+    
+
     <button id="btn">8</button>
+    
+
     <button id="btn">9</button>
+    
+
     <button id="btn">x</button>
+    
+
     <button id="btn">4</button>
+    
+
     <button id="btn">5</button>
+    
+
     <button id="btn">6</button>
+    
+
     <button id="btn">-</button>
-    <button id="btn">1</button>
+    
+
+    <button id="btn" onclick="addTodisplay('1')">1</button>
+    
+
     <button id="btn">2</button>
+    
+
     <button id="btn">3</button>
+    
+
     <button id="btn">+</button>
+    
+
     <button id="btn">0</button>
+    
+
     <button id="btn">,</button>
+    
+
     <button id="btn">=</button>
+    
+
    </div>
  </div>
+ <script>
+      let currentValue ="";
+      function addTodisplay(num){
+      currentValue += num;
+       document.getElementById('display').value = currentValue;
+    }
+   document.getElementById('display').value = currentValue;
+ </script>
 </body>
 </html>
